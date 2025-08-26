@@ -1,0 +1,13 @@
+[lfs]
+# Git LFS Configuration for GenAI Coach AI Repository
+# This file contains LFS-specific settings for the repository
+
+# Default LFS endpoint (uses GitHub's LFS service)
+# GitHub automatically provides the correct LFS endpoint
+
+# For Copilot Coding Agent compatibility
+# Ensures LFS operations work smoothly during automated pushes
+skipdownloaderrors = false
+
+# Additional safe configuration options can be added here as needed
+# Refer to: https://gh.io/copilot-coding-agent-lfs
