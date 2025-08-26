@@ -1,0 +1,26 @@
+title: GenAI Coach
+description: AI Training and Coaching platform connecting professionals with cutting-edge GenAI educational content
+repository: genai-coach/ai
+url: https://genai-coach.github.io/ai/
+baseurl: "/ai"
+
+plugins:
+  - jekyll-remote-theme
+  - jekyll-default-layout
+  - jekyll-gist
+  - jekyll-github-metadata
+  - jekyll-optional-front-matter
+  - jekyll-paginate
+  - jekyll-readme-index
+  - jekyll-titles-from-headings
+  - jekyll-relative-links
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-tailwindcss
+
+include: ["_pages"]
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
