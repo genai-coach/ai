@@ -295,6 +295,7 @@ GEM
       concurrent-ruby (~> 1.0)
     unicode-display_width (1.8.0)
     uri (1.0.3)
+    webrick (1.9.1)
 
 PLATFORMS
   aarch64-linux-gnu
@@ -319,6 +320,7 @@ DEPENDENCIES
   jekyll-sitemap
   jekyll-tailwindcss
   jekyll-titles-from-headings
+  webrick
 
 BUNDLED WITH
    2.7.1
