@@ -5,10 +5,12 @@ title: "AI Training & Coaching Platform"
 
 <!-- Hero Section -->
 <section class="hero py-20 lg:py-32">
+    <div class="hero-decoration"></div>
+    <div class="hero-decoration"></div>
     <div class="max-w-7xl mx-auto px-4 lg:px-8 text-center">
         <h1 class="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
             Master the Future of AI with 
-            <span class="text-transparent bg-clip-text" style="background: linear-gradient(90deg, #facc15 0%, #fb923c 100%); -webkit-background-clip: text;">GenAI Coach</span>
+            <span class="text-gradient">GenAI Coach</span>
         </h1>
         <p class="text-xl sm:text-2xl mb-8 max-w-3xl mx-auto text-blue-100">
             Connecting professionals with cutting-edge AI education and collaborative development opportunities. 
@@ -47,7 +49,7 @@ title: "AI Training & Coaching Platform"
                 <p class="text-gray-600 mb-6">
                     Comprehensive courses covering machine learning, deep learning, and generative AI technologies. From fundamentals to advanced applications.
                 </p>
-                <ul class="text-gray-600 space-y-2 list-none">
+                <ul class="text-gray-600 space-y-2 list-none enhanced-list">
                     <li class="flex items-center"><span class="w-2 h-2 bg-blue-500 rounded-full mr-3"></span>Hands-on workshops</li>
                     <li class="flex items-center"><span class="w-2 h-2 bg-blue-500 rounded-full mr-3"></span>Real-world projects</li>
                     <li class="flex items-center"><span class="w-2 h-2 bg-blue-500 rounded-full mr-3"></span>Industry best practices</li>
@@ -65,7 +67,7 @@ title: "AI Training & Coaching Platform"
                 <p class="text-gray-600 mb-6">
                     One-on-one mentorship to accelerate your AI journey. Personalized guidance from industry experts and practitioners.
                 </p>
-                <ul class="text-gray-600 space-y-2 list-none">
+                <ul class="text-gray-600 space-y-2 list-none enhanced-list">
                     <li class="flex items-center"><span class="w-2 h-2 bg-purple-500 rounded-full mr-3"></span>Personalized learning paths</li>
                     <li class="flex items-center"><span class="w-2 h-2 bg-purple-500 rounded-full mr-3"></span>Career guidance</li>
                     <li class="flex items-center"><span class="w-2 h-2 bg-purple-500 rounded-full mr-3"></span>Portfolio development</li>
@@ -83,7 +85,7 @@ title: "AI Training & Coaching Platform"
                 <p class="text-gray-600 mb-6">
                     Strategic AI implementation for organizations. Help your company navigate the AI transformation with expert guidance.
                 </p>
-                <ul class="text-gray-600 space-y-2 list-none">
+                <ul class="text-gray-600 space-y-2 list-none enhanced-list">
                     <li class="flex items-center"><span class="w-2 h-2 bg-green-500 rounded-full mr-3"></span>AI strategy development</li>
                     <li class="flex items-center"><span class="w-2 h-2 bg-green-500 rounded-full mr-3"></span>Team training programs</li>
                     <li class="flex items-center"><span class="w-2 h-2 bg-green-500 rounded-full mr-3"></span>Implementation support</li>
@@ -92,6 +94,8 @@ title: "AI Training & Coaching Platform"
         </div>
     </div>
 </section>
+
+<div class="section-divider"></div>
 
 <!-- About Section -->
 <section id="about" class="py-20 bg-white">
@@ -146,19 +150,19 @@ title: "AI Training & Coaching Platform"
             <div class="relative">
                 <div style="background: linear-gradient(135deg, #dbeafe 0%, #e9d5ff 100%);" class="rounded-2xl py-8 px-8">
                     <div class="grid grid-cols-2 gap-4">
-                        <div class="bg-white rounded-lg py-4 px-4 text-center shadow-md">
+                        <div class="stats-card">
                             <div class="text-2xl font-bold text-blue-600 mb-1">500+</div>
                             <div class="text-sm text-gray-600">Professionals Trained</div>
                         </div>
-                        <div class="bg-white rounded-lg py-4 px-4 text-center shadow-md">
+                        <div class="stats-card">
                             <div class="text-2xl font-bold text-purple-600 mb-1">50+</div>
                             <div class="text-sm text-gray-600">AI Projects Completed</div>
                         </div>
-                        <div class="bg-white rounded-lg py-4 px-4 text-center shadow-md">
+                        <div class="stats-card">
                             <div class="text-2xl font-bold text-green-600 mb-1">95%</div>
                             <div class="text-sm text-gray-600">Client Satisfaction</div>
                         </div>
-                        <div class="bg-white rounded-lg py-4 px-4 text-center shadow-md">
+                        <div class="stats-card">
                             <div class="text-2xl font-bold text-orange-600 mb-1">24/7</div>
                             <div class="text-sm text-gray-600">Support Available</div>
                         </div>
@@ -168,6 +172,8 @@ title: "AI Training & Coaching Platform"
         </div>
     </div>
 </section>
+
+<div class="section-divider"></div>
 
 <!-- Features Section -->
 <section class="py-20 bg-gray-50">
@@ -181,7 +187,7 @@ title: "AI Training & Coaching Platform"
         
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div class="text-center">
-                <div class="w-20 h-20 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-6">
+                <div class="feature-circle bg-blue-500">
                     <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
                     </svg>
@@ -191,7 +197,7 @@ title: "AI Training & Coaching Platform"
             </div>
             
             <div class="text-center">
-                <div class="w-20 h-20 bg-purple-500 rounded-full flex items-center justify-center mx-auto mb-6">
+                <div class="feature-circle bg-purple-500">
                     <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
                     </svg>
@@ -201,7 +207,7 @@ title: "AI Training & Coaching Platform"
             </div>
             
             <div class="text-center">
-                <div class="w-20 h-20 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-6">
+                <div class="feature-circle bg-green-500">
                     <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                     </svg>
@@ -211,7 +217,7 @@ title: "AI Training & Coaching Platform"
             </div>
             
             <div class="text-center">
-                <div class="w-20 h-20 bg-orange-500 rounded-full flex items-center justify-center mx-auto mb-6">
+                <div class="feature-circle bg-orange-500">
                     <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
                     </svg>
