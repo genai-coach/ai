@@ -58,7 +58,7 @@ title: "AI Training & Coaching Platform"
             
             <!-- Personal Coaching -->
             <div class="card">
-                <div class="icon-container" style="background: linear-gradient(90deg, #8b5cf6 0%, #ec4899 100%);">
+                <div class="icon-container" style="background: linear-gradient(90deg, #4A90E2 0%, #50C5B7 100%);">
                     <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
                     </svg>
@@ -230,7 +230,7 @@ title: "AI Training & Coaching Platform"
 </section>
 
 <!-- CTA Section -->
-<section id="contact" class="py-20" style="background: linear-gradient(90deg, #2563eb 0%, #9333ea 100%); color: white;">
+<section id="contact" class="py-20" style="background: linear-gradient(90deg, #4A90E2 0%, #50C5B7 100%); color: white;">
     <div class="max-w-4xl mx-auto px-4 lg:px-8 text-center">
         <h2 class="text-3xl sm:text-4xl font-bold mb-6">Ready to Transform Your AI Journey?</h2>
         <p class="text-xl mb-8 text-blue-100">
