@@ -16,13 +16,17 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
+          fetch-depth: 0
           lfs: true
 
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.3'
+          ruby-version: '3.2'
           bundler-cache: true
+
+      - name: Install Bundler
+        run: gem install bundler
 
       - name: Configure bundler for local installation
         run: |
@@ -31,6 +35,15 @@ jobs:
 
       - name: Install gems locally
         run: bundle install
+
+      - name: Safe diff with main
+        run: |
+          git fetch origin main || true
+          if git rev-parse --verify origin/main >/dev/null 2>&1; then
+            git diff origin/main...HEAD || echo "Could not perform diff"
+          else
+            echo "origin/main not available; skipping diff."
+          fi
 
       - name: Build site
         run: bundle exec jekyll build
