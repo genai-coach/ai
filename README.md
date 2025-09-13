@@ -86,3 +86,20 @@ If you encounter issues with LFS:
 3. Check tracking configuration: `cat .gitattributes`
 
 For more information, visit the [Git LFS documentation](https://git-lfs.github.io/).
+
+## Toolchain
+
+| Component | Version / Requirement |
+|-----------|-----------------------|
+| Ruby      | 3.3 (see `.ruby-version`) |
+| Bundler   | Use version that ships with Ruby 3.3 (install/update via `gem install bundler` if needed) |
+| Jekyll    | Installed via `bundle install` (see `Gemfile`) |
+| Git LFS   | Required for model/data/media assets |
+
+### Local Setup
+```bash
+ruby -v          # should report 3.3.x
+bundle install   # install gems
+bundle exec jekyll build
+```
+If you use a version manager (rbenv/asdf/chruby), it will auto-select 3.3 via `.ruby-version`.
