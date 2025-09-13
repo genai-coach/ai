@@ -13,24 +13,32 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout code
         uses: actions/checkout@v4
         with:
           lfs: true
+          fetch-depth: 0
 
-      - name: Setup Ruby
+      - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.3'
+          ruby-version: '3.2'
           bundler-cache: true
 
-      - name: Configure bundler for local installation
-        run: |
-          bundle config set path 'vendor/bundle'
-          bundle config set cache_path 'vendor/cache'
+      - name: Install Bundler
+        run: gem install bundler
 
-      - name: Install gems locally
+      - name: Install dependencies
         run: bundle install
+
+      - name: Safe diff with main
+        run: |
+          git fetch origin main || true
+          if git rev-parse --verify origin/main >/dev/null 2>&1; then
+            git diff origin/main...HEAD || echo "Could not perform diff"
+          else
+            echo "origin/main not available; skipping diff."
+          fi
 
       - name: Build site
         run: bundle exec jekyll build
