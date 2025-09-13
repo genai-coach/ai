@@ -1,6 +1,6 @@
 # GenAI Coach Jekyll Website
 
-GenAI Coach is a Jekyll-based GitHub Pages website for AI training and coaching. The site uses Ruby, Jekyll, Tailwind CSS, and Git Large File Storage (LFS) for handling AI/ML assets.
+GenAI Coach is a Jekyll-based GitHub Pages website for AI training and coaching. The site uses Ruby, Jekyll, the minima theme, and Git Large File Storage (LFS) for handling AI/ML assets.
 
 Always reference these instructions first and fallback to search or bash commands only when you encounter unexpected information that does not match the info here.
 
@@ -8,7 +8,7 @@ Always reference these instructions first and fallback to search or bash command
 
 ### Prerequisites and Environment Setup
 - Ensure Ruby is available: `ruby --version` (should be 3.2.3+)
-- Install bundler: `sudo gem install bundler`
+- Install bundler: `sudo gem install bundler` (takes 2-5 seconds)
 - Verify Git LFS: `git lfs --version` (should be 3.7.0+)
 
 ### Initial Repository Setup
@@ -20,8 +20,8 @@ cd ai
 git lfs install
 git lfs pull
 
-# Install dependencies - NEVER CANCEL: Takes 2-3 minutes initially
-sudo bundle install  # Set timeout to 10+ minutes
+# Install dependencies - NEVER CANCEL: Takes 30-60 seconds initially
+sudo bundle install  # Set timeout to 300+ seconds (5+ minutes)
 ```
 
 ### Core Development Commands
@@ -77,15 +77,13 @@ git push
    ```
    - Access `http://localhost:4000/ai/`
    - Verify homepage loads with GenAI Coach branding
-   - Navigate to `/about/` page
-   - Check that CSS styles render correctly
+   - Check that CSS styles render correctly (uses minima theme)
    - Confirm responsive design works
 
 3. **Content Validation:**
-   - Homepage should show hero section with "Master the Future of AI with GenAI Coach"
-   - About page should load instructor information (Stefano Vincenti from IT University of Copenhagen)
-   - Navigation links should work between pages
-   - All images and icons should render
+   - Homepage should show "GenAI Coach" title and "people-first" philosophy
+   - Site should load with clean minima theme styling
+   - Navigation links should work correctly
    - Footer should show copyright and contact information
 
 ### Manual Testing Scenarios
@@ -130,19 +128,16 @@ git checkout -- index.md  # Revert test change
 ├── .gitattributes        # LFS file patterns
 ├── .gitignore           # Jekyll and Ruby ignores
 ├── .lfsconfig           # LFS configuration  
+├── .ruby-version        # Ruby version (currently shows 1.3.3 but uses 3.2.3)
 ├── Gemfile              # Ruby dependencies
 ├── Gemfile.lock         # Locked dependency versions
 ├── README.md            # LFS setup documentation
 ├── _config.yml          # Jekyll configuration
-├── _layouts/            # HTML templates
-│   └── default.html     # Main page layout
-├── _pages/              # Site pages
-│   ├── about.md         # About page
-│   └── _projects/       # Project pages
 ├── _site/               # Generated site (do not edit)
-├── assets/              # CSS, images, etc.
-│   └── css/
-└── index.md             # Homepage content
+├── CODE_OF_CONDUCT.md   # Code of conduct
+├── CONTRIBUTING.md      # Contributing guidelines
+├── index.md             # Homepage content
+└── requirements.txt     # Python dependencies (placeholder)
 ```
 
 ### Key Configuration Files
@@ -150,27 +145,27 @@ git checkout -- index.md  # Revert test change
 **_config.yml contents:**
 ```yaml
 title: GenAI Coach
-description: AI Training and Coaching platform
-repository: genai-coach/ai
-url: https://genai-coach.github.io/ai/
+description: Open, people-first AI education platform
+url: https://genai-coach.github.io
 baseurl: "/ai"
-plugins: [jekyll-remote-theme, jekyll-tailwindcss, ...]
+theme: minima
+plugins: [jekyll-feed, jekyll-sitemap, jekyll-seo-tag, ...]
 ```
 
 **Gemfile dependencies:**
 ```ruby
-gem "github-pages", group: :jekyll_plugins
-gem "jekyll-remote-theme"
-gem "jekyll-tailwindcss" 
-gem "webrick"
+gem "jekyll-feed", "~> 0.12"
+gem "jekyll-sitemap"
+gem "jekyll-seo-tag"
+gem "minima", "~> 2.5"
+gem "webrick", "~> 1.7"
 ```
 
 ### Working with Content
 **Edit homepage:** Modify `index.md`
-**Edit about page:** Modify `_pages/about.md`  
-**Add new pages:** Create `.md` files in `_pages/`
-**Modify layout:** Edit `_layouts/default.html`
-**Update styles:** Edit `assets/css/tailwind.css`
+**Add new pages:** Create `.md` files in the root directory or use Jekyll pages structure
+**Modify styles:** The site uses the minima theme (CSS is managed by the theme)
+**Custom layouts:** Will be added in `_layouts/` directory when needed
 
 **After content changes, ALWAYS:**
 1. Build: `bundle exec jekyll build`
@@ -191,19 +186,19 @@ gem "webrick"
 **Build errors:** Check `_config.yml` syntax and Gemfile dependencies
 
 ### Timing Expectations
-- **Bundle install (first time):** 2-3 minutes - NEVER CANCEL, set 10+ minute timeout
-- **Bundle install (updates):** 30-60 seconds
+- **Bundle install (first time):** 30-60 seconds - NEVER CANCEL, set 5+ minute timeout
+- **Bundle install (subsequent/cached):** Under 1 second when gems are cached
 - **Jekyll build:** 1-2 seconds - very fast, safe to run frequently  
 - **Jekyll serve startup:** Instant - should be ready in under 5 seconds
-- **LFS pull:** Depends on file sizes - could be seconds to minutes
-- **Repository clone:** 10-30 seconds for this repository
+- **LFS pull:** Depends on file sizes - could be seconds to minutes for large files
+- **Repository clone:** Under 1 second for this repository (very small)
 
 ### Important Notes
 - This is a documentation site - no automated tests or linting exist
-- GitHub Pages automatically builds from main branch
+- GitHub Pages automatically builds from main branch using `.github/workflows/deploy.yml`
 - Always use baseurl `/ai/` when testing locally
 - LFS is critical - many AI/ML files won't work without it
-- The site uses custom CSS embedded in `_layouts/default.html`
-- Tailwind CSS is loaded via CDN in the layout file
+- The site uses the default minima Jekyll theme with minimal customization
 - Bundle install may show "Don't run Bundler as root" warning - this is normal and safe to ignore
-- Faraday retry gem warning during build is harmless - site builds successfully
+- Jekyll may show pagination warnings - these are harmless as no posts exist yet
+- Site builds successfully despite any warnings
