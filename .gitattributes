@@ -64,3 +64,21 @@
 *.npy filter=lfs diff=lfs merge=lfs -text
 *.npz filter=lfs diff=lfs merge=lfs -text
 *.mat filter=lfs diff=lfs merge=lfs -text
+# Documentation
+*.md text
+*.txt text
+*.yml text
+*.yaml text
+
+# Web assets
+*.html text
+*.css text
+*.js text
+*.json text
+
+# Images (if not already covered)
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.svg text
