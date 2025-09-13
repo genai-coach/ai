@@ -24,10 +24,16 @@ jobs:
           ruby-version: '3.3'
           bundler-cache: true
 
-      - name: Build site
+      - name: Configure bundler for local installation
         run: |
-          bundle install
-          bundle exec jekyll build
+          bundle config set path 'vendor/bundle'
+          bundle config set cache_path 'vendor/cache'
+
+      - name: Install gems locally
+        run: bundle install
+
+      - name: Build site
+        run: bundle exec jekyll build
 
       - name: Deploy to GitHub Pages
         if: github.ref == 'refs/heads/main'
