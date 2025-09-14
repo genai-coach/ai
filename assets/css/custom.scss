@@ -1,0 +1,14 @@
+---
+---
+/* Tokens */
+$brand-blue: #2f5be7;
+$brand-purple: #7a3ee6;
+/* Hero */
+.hero { background: linear-gradient(135deg, $brand-blue, $brand-purple); color: #fff; padding: 4rem 1.5rem; border-radius: 1rem; text-align: center; margin: 1.5rem 0; }
+/* Buttons */
+.btn { display:inline-block; padding:.6rem 1rem; border-radius:.5rem; text-decoration:none; border:1px solid transparent; }
+.btn-primary { background:#fff; color:$brand-blue; }
+.btn-outline { background:transparent; color:#fff; border-color:#fff; }
+/* Cards */
+.cards { display:grid; gap:1rem; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); }
+.card { background:#fff; border:1px solid #e6e8ee; border-radius:.75rem; padding:1rem; }

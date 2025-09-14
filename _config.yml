@@ -5,6 +5,12 @@ baseurl: /ai
 
 theme: minima
 
+header_pages:
+  - about.md
+  - courses.md
+  - projects.md
+  - community.md
+
 plugins:
   - jekyll-feed
   - jekyll-sitemap
