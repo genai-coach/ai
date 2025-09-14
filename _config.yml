@@ -1,5 +1,5 @@
 title: GenAI Coach
-description: Open, people-first AI education platform
+description: Open, people-first AI education platform. Learn responsibly, build ethically, and shape the future of artificial intelligence.
 url: https://genai-coach.github.io
 baseurl: /ai
 
@@ -13,12 +13,38 @@ plugins:
   - jekyll-paginate
   - jekyll-redirect-from
 
+# SEO settings
+lang: en_US
+author: GenAI Coach
+twitter:
+  username: genaicoach
+social:
+  type: Organization
+  links:
+    - https://github.com/genai-coach/ai
+
+# Navigation structure
+header_pages:
+  - courses.md
+  - projects.md
+  - docs.md
+  - community.md
+
 paginate: 10
 markdown: kramdown
 kramdown:
   input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: false
 
 exclude:
   - README.md
   - requirements-dev.txt
   - vendor
+  - node_modules
+  - .git
+  - .gitignore
+  - Gemfile
+  - Gemfile.lock
