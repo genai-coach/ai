@@ -3,31 +3,10 @@ layout: nil
 ---
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>{{ page.title | escape }} | {{ site.title | default: "GenAI Coach" }}</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  {% if site.description %}
-  <meta name="description" content="{{ site.description | escape }}">
-  {% endif %}
-  
-  <!-- Preconnect to Google Fonts for performance -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  
-  <!-- Load Google Fonts: Inter for UI, JetBrains Mono for code -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-  
-  <!-- Main stylesheet -->
-  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-  
-  {% if site.favicon %}
-  <link rel="icon" href="{{ site.favicon | relative_url }}">
-  {% endif %}
-</head>
+{% include head.html %}
 <body>
   <!-- Header with navigation -->
-  <header class="site-header">
+  <header class="site-header" role="banner">
     <div class="header-container">
       <a href="{{ '/' | relative_url }}" class="site-brand">
         {{ site.title | default: "GenAI Coach" }}
@@ -39,7 +18,7 @@ layout: nil
         <a href="{{ '/projects' | relative_url }}" class="nav-link">Projects</a>
         <a href="{{ '/docs' | relative_url }}" class="nav-link">Documentation</a>
         <a href="{{ '/community' | relative_url }}" class="nav-link">Community</a>
-        <a href="https://github.com/genai-coach/ai" class="nav-cta" target="_blank" rel="noopener">
+        <a href="https://github.com/genai-coach/ai" class="nav-cta" target="_blank" rel="noopener" aria-label="View GenAI Coach on GitHub">
           GitHub
         </a>
       </nav>
@@ -62,7 +41,7 @@ layout: nil
     <a href="{{ '/projects' | relative_url }}" class="mobile-nav-link">Projects</a>
     <a href="{{ '/docs' | relative_url }}" class="mobile-nav-link">Documentation</a>
     <a href="{{ '/community' | relative_url }}" class="mobile-nav-link">Community</a>
-    <a href="https://github.com/genai-coach/ai" class="mobile-nav-cta" target="_blank" rel="noopener">
+    <a href="https://github.com/genai-coach/ai" class="mobile-nav-cta" target="_blank" rel="noopener" aria-label="View GenAI Coach on GitHub">
       GitHub
     </a>
   </nav>
@@ -73,33 +52,35 @@ layout: nil
   </main>
 
   <!-- Footer -->
-  <footer class="site-footer">
-    <div class="footer-content">
-      <div class="footer-section">
-        <h4>Explore</h4>
-        <ul class="footer-links">
-          <li><a href="{{ '/courses' | relative_url }}">Courses</a></li>
-          <li><a href="{{ '/projects' | relative_url }}">Projects</a></li>
-          <li><a href="{{ '/docs' | relative_url }}">Documentation</a></li>
-          <li><a href="{{ '/community' | relative_url }}">Community</a></li>
-        </ul>
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-content">
+        <section class="footer-section">
+          <h4>Explore</h4>
+          <ul class="footer-links">
+            <li><a href="{{ '/courses' | relative_url }}">Courses</a></li>
+            <li><a href="{{ '/projects' | relative_url }}">Projects</a></li>
+            <li><a href="{{ '/docs' | relative_url }}">Documentation</a></li>
+            <li><a href="{{ '/community' | relative_url }}">Community</a></li>
+          </ul>
+        </section>
+        <section class="footer-section">
+          <h4>Connect</h4>
+          <ul class="footer-links">
+            <li><a href="https://github.com/genai-coach/ai" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="{{ '/contributing' | relative_url }}">Contributing</a></li>
+            <li><a href="{{ '/code-of-conduct' | relative_url }}">Code of Conduct</a></li>
+            <li><a href="{{ '/contact' | relative_url }}">Contact</a></li>
+          </ul>
+        </section>
+        <section class="footer-section">
+          <h4>{{ site.title | default: "GenAI Coach" }}</h4>
+          <p>{{ site.description | default: "Open, people-first AI education platform" }}</p>
+        </section>
       </div>
-      <div class="footer-section">
-        <h4>Connect</h4>
-        <ul class="footer-links">
-          <li><a href="https://github.com/genai-coach/ai" target="_blank" rel="noopener">GitHub</a></li>
-          <li><a href="{{ '/contributing' | relative_url }}">Contributing</a></li>
-          <li><a href="{{ '/code-of-conduct' | relative_url }}">Code of Conduct</a></li>
-          <li><a href="{{ '/contact' | relative_url }}">Contact</a></li>
-        </ul>
+      <div class="footer-bottom">
+        <p>&copy; {{ 'now' | date: "%Y" }} GenAI Coach. Open source education for all.</p>
       </div>
-      <div class="footer-section">
-        <h4>{{ site.title | default: "GenAI Coach" }}</h4>
-        <p>{{ site.description | default: "Open, people-first AI education platform" }}</p>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; {{ 'now' | date: "%Y" }} GenAI Coach. Open source education for all.</p>
     </div>
   </footer>
 
@@ -112,74 +93,55 @@ layout: nil
       const mobileNav = document.querySelector('.mobile-nav');
       const navBackdrop = document.querySelector('.nav-backdrop');
       const closeNav = document.querySelector('.close-nav');
-      const body = document.body;
       
-      if (!burgerMenu || !mobileNav || !navBackdrop || !closeNav) return;
+      function toggleMobileNav() {
+        const isOpen = mobileNav.getAttribute('aria-hidden') === 'false';
+        
+        if (isOpen) {
+          closeMobileNav();
+        } else {
+          openMobileNav();
+        }
+      }
       
-      let isNavOpen = false;
-      
-      function openNav() {
-        isNavOpen = true;
-        burgerMenu.setAttribute('aria-expanded', 'true');
-        mobileNav.classList.add('open');
+      function openMobileNav() {
         mobileNav.setAttribute('aria-hidden', 'false');
-        navBackdrop.classList.add('open');
-        body.classList.add('body-scroll-lock');
+        burgerMenu.setAttribute('aria-expanded', 'true');
+        navBackdrop.classList.add('active');
+        document.body.style.overflow = 'hidden';
         
         // Focus management
         closeNav.focus();
       }
       
-      function closeNavigation() {
-        isNavOpen = false;
-        burgerMenu.setAttribute('aria-expanded', 'false');
-        mobileNav.classList.remove('open');
+      function closeMobileNav() {
         mobileNav.setAttribute('aria-hidden', 'true');
-        navBackdrop.classList.remove('open');
-        body.classList.remove('body-scroll-lock');
+        burgerMenu.setAttribute('aria-expanded', 'false');
+        navBackdrop.classList.remove('active');
+        document.body.style.overflow = '';
         
         // Return focus to burger menu
         burgerMenu.focus();
       }
       
-      // Toggle navigation
-      burgerMenu.addEventListener('click', function() {
-        if (isNavOpen) {
-          closeNavigation();
-        } else {
-          openNav();
-        }
-      });
+      // Event listeners
+      if (burgerMenu) burgerMenu.addEventListener('click', toggleMobileNav);
+      if (closeNav) closeNav.addEventListener('click', closeMobileNav);
+      if (navBackdrop) navBackdrop.addEventListener('click', closeMobileNav);
       
-      // Close navigation with close button
-      closeNav.addEventListener('click', closeNavigation);
-      
-      // Close navigation when clicking backdrop
-      navBackdrop.addEventListener('click', closeNavigation);
-      
-      // Close navigation with Escape key
+      // Close on escape key
       document.addEventListener('keydown', function(e) {
-        if (e.key === 'Escape' && isNavOpen) {
-          closeNavigation();
+        if (e.key === 'Escape' && mobileNav && mobileNav.getAttribute('aria-hidden') === 'false') {
+          closeMobileNav();
         }
       });
       
-      // Close navigation when clicking a mobile nav link
-      const mobileNavLinks = mobileNav.querySelectorAll('a');
-      mobileNavLinks.forEach(function(link) {
-        link.addEventListener('click', function() {
-          // Small delay to allow navigation to start
-          setTimeout(closeNavigation, 100);
-        });
-      });
-      
-      // Handle window resize - close mobile nav if screen becomes desktop size
+      // Close mobile nav when window is resized to desktop size
       window.addEventListener('resize', function() {
-        if (window.innerWidth > 768 && isNavOpen) {
-          closeNavigation();
+        if (window.innerWidth >= 769 && mobileNav && mobileNav.getAttribute('aria-hidden') === 'false') {
+          closeMobileNav();
         }
       });
-      
     })();
   </script>
 </body>
