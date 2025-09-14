@@ -1,0 +1,27 @@
+<header class="site-header">
+  <div class="wrapper">
+    <div class="branding">
+      <a href="{{ '/' | relative_url }}">
+        <span>GenAI Coach</span>
+      </a>
+    </div>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="site-navigation">
+      <span class="nav-toggle-label">Menu</span>
+    </button>
+    <nav id="site-navigation" class="site-nav" aria-label="Primary">
+      {% assign nav_items = site.nav | default: site.pages %}
+      {% if site.nav %}
+        {% for item in site.nav %}
+          <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
+        {% endfor %}
+      {% else %}
+        {% for p in site.pages %}
+          {% if p.nav_exclude != true and p.title %}
+            <a href="{{ p.url | relative_url }}">{{ p.title }}</a>
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+      <a href="https://github.com/genai-coach/ai" rel="noopener" target="_blank">GitHub</a>
+    </nav>
+  </div>
+</header>
