@@ -27,8 +27,8 @@ social:
 header_pages:
   - courses.md
   - projects.md
-  - docs.md
   - community.md
+  - docs/index.md
 
 paginate: 10
 markdown: kramdown
