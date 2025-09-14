@@ -103,3 +103,52 @@ bundle install   # install gems
 bundle exec jekyll build
 ```
 If you use a version manager (rbenv/asdf/chruby), it will auto-select 3.3 via `.ruby-version`.
+
+## Style Guide
+
+### Professional Color System
+
+This site uses a professional accessible color palette defined in `assets/css/theme.css`. All colors are organized as CSS custom properties (variables) to ensure consistency and maintainability.
+
+#### Color Token Usage
+
+**✅ Preferred - Use semantic component tokens:**
+```css
+color: var(--text-primary);
+background: var(--button-primary-bg);
+border-color: var(--card-border);
+```
+
+**✅ Acceptable - Use semantic tokens:**
+```css
+color: var(--brand-500);
+background: var(--surface-secondary);
+```
+
+**❌ Avoid - Hard-coded hex values:**
+```css
+color: #2E74E6;  /* Use var(--brand-500) instead */
+background: #FFFFFF;  /* Use var(--surface-primary) instead */
+```
+
+#### Available Token Categories
+
+- **Brand Colors**: `--brand-50` through `--brand-900` (professional blue scale)
+- **Semantic Colors**: `--success-500`, `--warning-500`, `--danger-500`, `--info-500`
+- **Surface/Background**: `--surface-primary`, `--surface-secondary`, `--surface-tertiary`
+- **Text Colors**: `--text-primary`, `--text-secondary`, `--text-tertiary`
+- **Component Tokens**: `--button-primary-bg`, `--link-color`, `--card-bg`, etc.
+
+#### Dark Mode Support
+
+The system includes a dark mode implementation using `@media (prefers-color-scheme: dark)` that automatically adjusts colors for better readability.
+
+#### Accessibility Guidelines
+
+- All color combinations maintain WCAG AA contrast ratios (4.5:1 minimum)
+- Focus states use `--focus-ring` for keyboard navigation
+- Text selection uses high-contrast `--selection-bg` and `--selection-fg`
+
+#### Development Rule
+
+**No new hard-coded hex values** - always use the provided color tokens. If you need a color that doesn't exist, add it to the token system first.
