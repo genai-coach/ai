@@ -1,0 +1,179 @@
+/*!
+ * GenAI Coach Professional Color Theme
+ * Accessible color palette with brand, semantic, and neutral tokens
+ */
+
+:root {
+  /* ==========================================================================
+     BRAND COLORS - Professional blue scale (50-900)
+     ========================================================================== */
+  --brand-50: #EEF4FF;
+  --brand-100: #D9E8FF;
+  --brand-200: #B3D2FF;
+  --brand-300: #84B8FF;
+  --brand-400: #5698F5;
+  --brand-500: #2E74E6;   /* Primary brand color */
+  --brand-600: #1F56B3;
+  --brand-700: #173F82;
+  --brand-800: #102A57;
+  --brand-900: #0A1C39;
+
+  /* ==========================================================================
+     ACCENT COLORS - Warm, human-friendly tones
+     ========================================================================== */
+  --coral-50: #FFF3F1;
+  --coral-100: #FFD9D2;
+  --coral-200: #FF9C89;
+  --coral-300: #FF6A52;
+  --coral-400: #E24D37;
+
+  --amber-100: #FFE9C2;
+  --amber-200: #FFC766;
+  --amber-300: #FFAD1F;
+  --amber-400: #D68500;
+
+  /* ==========================================================================
+     GRAY SCALE - Professional neutral palette
+     ========================================================================== */
+  --gray-50: #F8FAFC;
+  --gray-100: #F1F5F9;
+  --gray-200: #E2E8F0;
+  --gray-300: #CBD5E1;
+  --gray-400: #94A3B8;
+  --gray-500: #64748B;
+  --gray-600: #475569;
+  --gray-700: #334155;
+  --gray-800: #1E293B;
+  --gray-900: #0F172A;
+
+  /* ==========================================================================
+     SEMANTIC COLORS - Clear system feedback
+     ========================================================================== */
+  --success-500: #1FA773;
+  --success-600: #16855A;
+  
+  --warning-500: #E19900;
+  --warning-600: #B77700;
+  
+  --danger-500: #DF3F44;
+  --danger-600: #B92A2E;
+  
+  --info-500: #127FBF;
+  --info-600: #0D6090;
+
+  /* ==========================================================================
+     INTERACTION STATES
+     ========================================================================== */
+  --focus-ring: #5698F5;
+  --selection-bg: #B3D2FF;
+  --selection-fg: #0F172A;
+
+  /* ==========================================================================
+     SURFACE & TEXT - Light mode defaults
+     ========================================================================== */
+  --surface-primary: #FFFFFF;
+  --surface-secondary: #F8FAFC;
+  --surface-tertiary: #F1F5F9;
+  --surface-overlay: rgba(15, 23, 42, 0.6);
+
+  --text-primary: #0F172A;
+  --text-secondary: #334155;
+  --text-tertiary: #64748B;
+  --text-inverse: #FFFFFF;
+
+  /* ==========================================================================
+     PROFESSIONAL GRADIENTS
+     ========================================================================== */
+  --gradient-brand: linear-gradient(135deg, #2E74E6 0%, #5145FF 50%, #FF6A52 100%);
+  --gradient-soft: linear-gradient(135deg, #EEF4FF 0%, #D9E8FF 50%, #FFD9D2 100%);
+  --gradient-surface: linear-gradient(180deg, #FFFFFF 0%, #F8FAFC 100%);
+
+  /* ==========================================================================
+     COMPONENT TOKENS - Semantic mapping for consistency
+     ========================================================================== */
+  --button-primary-bg: var(--brand-600);     /* Darker for better contrast */
+  --button-primary-text: var(--text-inverse);
+  --button-primary-hover: var(--brand-700);
+  
+  --button-secondary-bg: var(--surface-primary);
+  --button-secondary-text: var(--brand-600);  /* Darker for better contrast */
+  --button-secondary-border: var(--gray-300);
+  --button-secondary-hover: var(--brand-50);
+
+  --link-color: var(--brand-600);             /* Darker for better contrast */
+  --link-hover: var(--brand-700);
+  --link-visited: var(--brand-700);
+
+  --card-bg: var(--surface-primary);
+  --card-border: var(--gray-200);
+  --card-shadow: rgba(15, 23, 42, 0.08);
+  --card-hover-shadow: rgba(15, 23, 42, 0.12);
+}
+
+/* ==========================================================================
+   DARK MODE - Minimal implementation placeholder
+   ========================================================================== */
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Background and surface adjustments */
+    --surface-primary: #1E293B;
+    --surface-secondary: #334155;
+    --surface-tertiary: #475569;
+    --surface-overlay: rgba(248, 250, 252, 0.1);
+
+    /* Text adjustments for dark backgrounds */
+    --text-primary: #F8FAFC;
+    --text-secondary: #CBD5E1;
+    --text-tertiary: #94A3B8;
+    --text-inverse: #0F172A;
+
+    /* Maintain brand colors but adjust for contrast */
+    --button-primary-bg: var(--brand-400);
+    --button-primary-hover: var(--brand-300);
+    
+    --link-color: var(--brand-300);
+    --link-hover: var(--brand-200);
+    --link-visited: var(--brand-400);
+
+    /* Cards and components */
+    --card-bg: var(--surface-secondary);
+    --card-border: var(--gray-600);
+    --card-shadow: rgba(0, 0, 0, 0.2);
+    --card-hover-shadow: rgba(0, 0, 0, 0.3);
+
+    /* Adjust gradients for dark mode */
+    --gradient-surface: linear-gradient(180deg, #1E293B 0%, #334155 100%);
+  }
+}
+
+/* ==========================================================================
+   ACCESSIBILITY UTILITIES
+   ========================================================================== */
+
+/* High contrast selection for better readability */
+::selection {
+  background-color: var(--selection-bg);
+  color: var(--selection-fg);
+}
+
+/* Focus ring for keyboard navigation */
+:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 2px;
+}
+
+/* ==========================================================================
+   USAGE GUIDELINES (commented)
+   
+   Use semantic tokens instead of raw colors:
+   ✅ Good: color: var(--text-primary);
+   ❌ Avoid: color: #0F172A;
+   
+   ✅ Good: background: var(--button-primary-bg);
+   ❌ Avoid: background: #2E74E6;
+   
+   Preferred token hierarchy:
+   1. Component tokens (--button-primary-bg)
+   2. Semantic tokens (--text-primary) 
+   3. Scale tokens (--brand-500) only when semantic doesn't exist
+   ========================================================================== */
