@@ -7,96 +7,271 @@
   
   <meta name="description" content="Open, people-first AI education platform">
   
-  <link rel="stylesheet" href="/ai/assets/main.css">
+  
+  <!-- Preconnect to Google Fonts for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <!-- Load Google Fonts: Inter for UI, JetBrains Mono for code -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="/ai/assets/css/style.css">
+  
   
 </head>
 <body>
+  <!-- Header with navigation -->
   <header class="site-header">
-  <div class="wrapper">
-    <div class="branding">
-      <a href="/ai/">
-        <span>GenAI Coach</span>
+    <div class="header-container">
+      <a href="/ai/" class="site-brand">
+        GenAI Coach
       </a>
+      
+      <!-- Desktop Navigation -->
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <a href="/ai/courses" class="nav-link">Courses</a>
+        <a href="/ai/projects" class="nav-link">Projects</a>
+        <a href="/ai/docs" class="nav-link">Documentation</a>
+        <a href="/ai/community" class="nav-link">Community</a>
+        <a href="https://github.com/genai-coach/ai" class="nav-cta" target="_blank" rel="noopener">
+          GitHub
+        </a>
+      </nav>
+      
+      <!-- Mobile menu button -->
+      <button class="burger-menu" aria-expanded="false" aria-controls="mobile-nav" aria-label="Toggle navigation menu">
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+        <span class="visually-hidden">Menu</span>
+      </button>
     </div>
-    <button class="nav-toggle" aria-expanded="false" aria-controls="site-navigation">
-      <span class="nav-toggle-label">Menu</span>
-    </button>
-    <nav id="site-navigation" class="site-nav" aria-label="Primary">
-      
-      
-        
-          
-            <a href="/ai/">GenAI Coach</a>
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-      
-      <a href="https://github.com/genai-coach/ai" rel="noopener" target="_blank">GitHub</a>
-    </nav>
+  </header>
+
+  <!-- Mobile Navigation Panel -->
+  <div class="nav-backdrop"></div>
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation" aria-hidden="true">
+    <button class="close-nav" aria-label="Close navigation menu">×</button>
+    <a href="/ai/courses" class="mobile-nav-link">Courses</a>
+    <a href="/ai/projects" class="mobile-nav-link">Projects</a>
+    <a href="/ai/docs" class="mobile-nav-link">Documentation</a>
+    <a href="/ai/community" class="mobile-nav-link">Community</a>
+    <a href="https://github.com/genai-coach/ai" class="mobile-nav-cta" target="_blank" rel="noopener">
+      GitHub
+    </a>
+  </nav>
+
+  <!-- Main Content -->
+  <main id="main-content" tabindex="-1">
+    <!-- Hero Section -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-content">
+      <h1>
+        Build the Future with <span class="gradient-text">Ethical AI</span>
+      </h1>
+      <p class="hero-lead">
+        Foundational, open AI education with a people-first philosophy. 
+        Learn responsibly, build ethically, and shape the future of artificial intelligence.
+      </p>
+      <div class="hero-actions">
+        <a href="/ai/courses" class="btn btn-primary">Start Learning</a>
+        <a href="/ai/projects" class="btn btn-secondary">Explore Projects</a>
+      </div>
+    </div>
   </div>
-</header>
+</section>
 
-  <main id="main-content" class="site-main" tabindex="-1">
-    <h1 id="genai-coach">GenAI Coach</h1>
+<!-- Key Areas Section -->
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Your AI Learning Journey</h2>
+      <p class="section-subtitle">
+        Comprehensive resources to master AI development with ethical principles at the core
+      </p>
+    </div>
+    
+    <div class="card-grid">
+      <div class="card">
+        <div class="card-icon">🧪</div>
+        <h3 class="card-title">AI Labs</h3>
+        <p class="card-description">
+          Hands-on experiments and interactive tutorials to explore AI concepts, 
+          from basic neural networks to advanced architectures.
+        </p>
+        <span class="card-status coming-soon">Coming Soon</span>
+      </div>
+      
+      <div class="card">
+        <div class="card-icon">⚙️</div>
+        <h3 class="card-title">Model Lifecycle</h3>
+        <p class="card-description">
+          Complete guides for training, evaluating, deploying, and monitoring 
+          AI models with industry best practices.
+        </p>
+        <span class="card-status coming-soon">Coming Soon</span>
+      </div>
+      
+      <div class="card">
+        <div class="card-icon">👥</div>
+        <h3 class="card-title">Community</h3>
+        <p class="card-description">
+          Connect with fellow learners, share projects, get help, and contribute 
+          to open-source AI education initiatives.
+        </p>
+        <span class="card-status coming-soon">Coming Soon</span>
+      </div>
+      
+      <div class="card">
+        <div class="card-icon">🛠️</div>
+        <h3 class="card-title">Toolchain Guidance</h3>
+        <p class="card-description">
+          Curated recommendations for frameworks, libraries, and tools to build 
+          robust AI applications efficiently.
+        </p>
+        <span class="card-status coming-soon">Coming Soon</span>
+      </div>
+    </div>
+  </div>
+</section>
 
-<p>Foundational, open AI education with a <em>people-first</em> philosophy.</p>
-
-<h2 id="what-is-this-repository">What is this repository?</h2>
-<p>It provides:</p>
-<ul>
-  <li><strong>Courses</strong> (<code class="language-plaintext highlighter-rouge">/courses</code>) – structured learning modules (coming soon)</li>
-  <li><strong>Projects</strong> (<code class="language-plaintext highlighter-rouge">/projects</code>) – hands-on, ethical AI build exercises (coming soon)</li>
-  <li><strong>Documentation</strong> (<code class="language-plaintext highlighter-rouge">/docs</code>) – setup &amp; guidance (coming soon)</li>
-</ul>
-
-<blockquote>
-  <p>Styling, advanced landing layout and rich navigation will be introduced in a later PR.</p>
-</blockquote>
-
-<h2 id="quick-start">Quick Start</h2>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle <span class="nb">install
-</span>bundle <span class="nb">exec </span>jekyll serve
-<span class="c"># Visit: http://127.0.0.1:4000/ai/</span>
-</code></pre></div></div>
-
-<h2 id="contributing">Contributing</h2>
-<p>See community/CONTRIBUTING.md (added in prior PR).</p>
+<!-- Quick Start Section -->
+<section class="section">
+  <div class="container-narrow">
+    <div class="section-header">
+      <h2 class="section-title">Quick Start</h2>
+      <p class="section-subtitle">
+        Get the development environment up and running in minutes
+      </p>
+    </div>
+    
+    <div class="card">
+      <h3 class="card-title">Local Development Setup</h3>
+      <p class="card-description">
+        Clone the repository and start the Jekyll development server to explore the platform locally.
+      </p>
+      <pre><code>git clone https://github.com/genai-coach/ai.git
+cd ai
+bundle install
+bundle exec jekyll serve
+# Visit: http://127.0.0.1:4000/ai/</code></pre>
+    </div>
+  </div>
+</section>
 
   </main>
-  <footer class="site-footer h-card">
-  <data class="u-url" href="/ai/"></data>
 
-  <div class="wrapper">
-
-    <h2 class="footer-heading">GenAI Coach</h2>
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li class="p-name">GenAI Coach</li></ul>
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>Explore</h4>
+        <ul class="footer-links">
+          <li><a href="/ai/courses">Courses</a></li>
+          <li><a href="/ai/projects">Projects</a></li>
+          <li><a href="/ai/docs">Documentation</a></li>
+          <li><a href="/ai/community">Community</a></li>
+        </ul>
       </div>
-
-      <div class="footer-col footer-col-2"><ul class="social-media-list"></ul>
-</div>
-
-      <div class="footer-col footer-col-3">
+      <div class="footer-section">
+        <h4>Connect</h4>
+        <ul class="footer-links">
+          <li><a href="https://github.com/genai-coach/ai" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="/ai/contributing">Contributing</a></li>
+          <li><a href="/ai/code-of-conduct">Code of Conduct</a></li>
+          <li><a href="/ai/contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>GenAI Coach</h4>
         <p>Open, people-first AI education platform</p>
       </div>
     </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 GenAI Coach. Open source education for all.</p>
+    </div>
+  </footer>
 
-  </div>
-
-</footer>
-
-  <script src="/ai/assets/js/site.js" defer></script>
+  <!-- JavaScript for mobile navigation -->
+  <script>
+    (function() {
+      'use strict';
+      
+      const burgerMenu = document.querySelector('.burger-menu');
+      const mobileNav = document.querySelector('.mobile-nav');
+      const navBackdrop = document.querySelector('.nav-backdrop');
+      const closeNav = document.querySelector('.close-nav');
+      const body = document.body;
+      
+      if (!burgerMenu || !mobileNav || !navBackdrop || !closeNav) return;
+      
+      let isNavOpen = false;
+      
+      function openNav() {
+        isNavOpen = true;
+        burgerMenu.setAttribute('aria-expanded', 'true');
+        mobileNav.classList.add('open');
+        mobileNav.setAttribute('aria-hidden', 'false');
+        navBackdrop.classList.add('open');
+        body.classList.add('body-scroll-lock');
+        
+        // Focus management
+        closeNav.focus();
+      }
+      
+      function closeNavigation() {
+        isNavOpen = false;
+        burgerMenu.setAttribute('aria-expanded', 'false');
+        mobileNav.classList.remove('open');
+        mobileNav.setAttribute('aria-hidden', 'true');
+        navBackdrop.classList.remove('open');
+        body.classList.remove('body-scroll-lock');
+        
+        // Return focus to burger menu
+        burgerMenu.focus();
+      }
+      
+      // Toggle navigation
+      burgerMenu.addEventListener('click', function() {
+        if (isNavOpen) {
+          closeNavigation();
+        } else {
+          openNav();
+        }
+      });
+      
+      // Close navigation with close button
+      closeNav.addEventListener('click', closeNavigation);
+      
+      // Close navigation when clicking backdrop
+      navBackdrop.addEventListener('click', closeNavigation);
+      
+      // Close navigation with Escape key
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && isNavOpen) {
+          closeNavigation();
+        }
+      });
+      
+      // Close navigation when clicking a mobile nav link
+      const mobileNavLinks = mobileNav.querySelectorAll('a');
+      mobileNavLinks.forEach(function(link) {
+        link.addEventListener('click', function() {
+          // Small delay to allow navigation to start
+          setTimeout(closeNavigation, 100);
+        });
+      });
+      
+      // Handle window resize - close mobile nav if screen becomes desktop size
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 768 && isNavOpen) {
+          closeNavigation();
+        }
+      });
+      
+    })();
+  </script>
 </body>
 </html>
