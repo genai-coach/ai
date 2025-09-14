@@ -91,17 +91,17 @@
   /* ==========================================================================
      COMPONENT TOKENS - Semantic mapping for consistency
      ========================================================================== */
-  --button-primary-bg: var(--brand-500);
+  --button-primary-bg: var(--brand-600);     /* Darker for better contrast */
   --button-primary-text: var(--text-inverse);
-  --button-primary-hover: var(--brand-600);
+  --button-primary-hover: var(--brand-700);
   
   --button-secondary-bg: var(--surface-primary);
-  --button-secondary-text: var(--brand-500);
+  --button-secondary-text: var(--brand-600);  /* Darker for better contrast */
   --button-secondary-border: var(--gray-300);
   --button-secondary-hover: var(--brand-50);
 
-  --link-color: var(--brand-500);
-  --link-hover: var(--brand-600);
+  --link-color: var(--brand-600);             /* Darker for better contrast */
+  --link-hover: var(--brand-700);
   --link-visited: var(--brand-700);
 
   --card-bg: var(--surface-primary);
