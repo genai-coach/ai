@@ -1,1 +1,38 @@
+# Robots.txt for GenAI Coach AI Education Platform
+# https://genai-coach.github.io/ai/
+
+User-agent: *
+Allow: /
+
+# Allow all major search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+# Block common bad bots and scrapers
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+# Crawl delay for politeness
+Crawl-delay: 1
+
+# Sitemap location
 Sitemap: https://genai-coach.github.io/ai/sitemap.xml
+
+# Additional sitemaps (if they exist in the future)
+# Sitemap: https://genai-coach.github.io/ai/sitemap-courses.xml
+# Sitemap: https://genai-coach.github.io/ai/sitemap-projects.xml
