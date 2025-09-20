@@ -13,15 +13,52 @@ plugins:
   - jekyll-paginate
   - jekyll-redirect-from
 
-# SEO settings
+# Enhanced SEO settings
 lang: en_US
 author: GenAI Coach
+logo: /assets/images/social-card.svg
+image: /assets/images/social-card.svg
+
+# Social media settings
 twitter:
   username: genaicoach
+  card: summary_large_image
+  
+facebook:
+  app_id: # Add if Facebook integration needed
+  
 social:
   type: Organization
+  name: GenAI Coach
   links:
     - https://github.com/genai-coach/ai
+    
+# Website metadata
+tagline: "Open, People-First AI Education"
+keywords: "AI education, machine learning, artificial intelligence, ethics, responsible AI, AI training, AI consulting"
+
+# SEO defaults for pages
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+      image: /assets/images/social-card.svg
+      
+# Site verification (uncomment when verification codes are available)
+# google_site_verification: "your-google-verification-code"
+# bing_site_verification: "your-bing-verification-code"
+
+# Feed settings
+feed:
+  posts_limit: 20
+  excerpt_only: false
+
+# Sitemap settings
+sitemap:
+  exclude:
+    - /redirects.json
 
 # Navigation structure
 header_pages:

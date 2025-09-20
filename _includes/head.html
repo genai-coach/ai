@@ -2,33 +2,99 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- Security headers -->
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="X-Frame-Options" content="DENY">
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+  
+  <!-- SEO and Social Media -->
   {%- seo -%}
   
-  <!-- Preconnect to external domains for performance -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  
-  <!-- Custom stylesheet with design system -->
-  <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
-  
-  <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3e%3ccircle cx='50' cy='50' r='40' fill='%232E74E6'/%3e%3ctext x='50' y='60' text-anchor='middle' fill='white' font-family='system-ui' font-size='40' font-weight='bold'%3eG%3c/text%3e%3c/svg%3e">
-  
-  <!-- Feed -->
-  {%- feed_meta -%}
-  
-  <!-- Open Graph and Twitter meta tags -->
+  <!-- Enhanced Open Graph and Twitter meta tags -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="{{ page.title | default: site.title }}">
   <meta property="og:description" content="{{ page.description | default: site.description }}">
   <meta property="og:url" content="{{ page.url | absolute_url }}">
   <meta property="og:site_name" content="{{ site.title }}">
+  <meta property="og:image" content="{{ '/assets/images/social-card.svg' | absolute_url }}">
+  <meta property="og:image:alt" content="GenAI Coach - Open, People-First AI Education Platform">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="en_US">
   
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="{{ page.title | default: site.title }}">
   <meta name="twitter:description" content="{{ page.description | default: site.description }}">
+  <meta name="twitter:image" content="{{ '/assets/images/social-card.svg' | absolute_url }}">
+  <meta name="twitter:image:alt" content="GenAI Coach - Open, People-First AI Education Platform">
+  <meta name="twitter:site" content="@genaicoach">
+  <meta name="twitter:creator" content="@genaicoach">
   
-  <!-- Theme color for mobile browsers -->
+  <!-- Additional SEO meta tags -->
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="googlebot" content="index, follow">
+  <meta name="author" content="GenAI Coach">
+  <meta name="language" content="en">
+  <meta name="coverage" content="worldwide">
+  <meta name="distribution" content="global">
+  <meta name="rating" content="general">
+  
+  <!-- Performance optimizations -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="dns-prefetch" href="//github.com">
+  <link rel="dns-prefetch" href="//api.github.com">
+  
+  <!-- Favicon and app icons -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3e%3ccircle cx='50' cy='50' r='40' fill='%232E74E6'/%3e%3ctext x='50' y='60' text-anchor='middle' fill='white' font-family='system-ui' font-size='40' font-weight='bold'%3eG%3c/text%3e%3c/svg%3e">
+  <link rel="apple-touch-icon" href="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3e%3ccircle cx='50' cy='50' r='40' fill='%232E74E6'/%3e%3ctext x='50' y='60' text-anchor='middle' fill='white' font-family='system-ui' font-size='40' font-weight='bold'%3eG%3c/text%3e%3c/svg%3e">
+  
+  <!-- Feed -->
+  {%- feed_meta -%}
+  
+  <!-- Theme colors for mobile browsers -->
   <meta name="theme-color" content="#2E74E6">
   <meta name="msapplication-TileColor" content="#2E74E6">
+  <meta name="msapplication-config" content="none">
+  
+  <!-- Custom stylesheet with design system -->
+  <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
+  
+  <!-- Structured Data for Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "{{ site.title }}",
+    "description": "{{ site.description }}",
+    "url": "{{ site.url }}{{ site.baseurl }}",
+    "logo": "{{ '/assets/images/social-card.svg' | absolute_url }}",
+    "foundingDate": "2024",
+    "areaServed": "Worldwide",
+    "knowsAbout": ["Artificial Intelligence", "Machine Learning", "AI Education", "AI Ethics", "Technology Training"],
+    "sameAs": [
+      "https://github.com/genai-coach/ai"{% if site.twitter.username %},
+      "https://twitter.com/{{ site.twitter.username }}"{% endif %}
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "General Inquiry",
+      "email": "vinc@itu.dk"
+    }
+  }
+  </script>
+  
+  <!-- Analytics preparation (uncomment when ready) -->
+  <!-- Google Analytics 4 -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=GA_TRACKING_ID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'GA_TRACKING_ID');
+  </script> -->
+  
+  <!-- Google Search Console verification (replace with actual verification code) -->
+  <!-- <meta name="google-site-verification" content="your-verification-code"> -->
 </head>

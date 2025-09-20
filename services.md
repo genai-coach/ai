@@ -2,6 +2,8 @@
 layout: page
 title: Services
 permalink: /services/
+description: "Expert AI consulting and professional services. Navigate AI complexity, accelerate digital product development, and achieve measurable business impact with ethical AI solutions."
+keywords: "AI consulting, AI services, artificial intelligence consulting, business AI transformation, AI strategy, AI implementation"
 ---
 
 # AI Consulting & Professional Services
