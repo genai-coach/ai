@@ -97,11 +97,11 @@ Specialized programs for Danish companies featuring:
 
 ## Additional Training Programs
 
-### Executive Programs (€15,000-50,000)
+### Executive Programs
 - **AI Leadership for C-Suite**: Strategic transformation for executive teams
 - **Data-Driven Decision Making**: Analytics and AI for business intelligence
 
-### Implementation Bootcamps (€5,000-15,000)
+### Implementation Bootcamps
 - **Sales & Marketing AI Transformation**: Revenue acceleration through AI
 - **Operations Excellence Through AI**: Cost reduction and efficiency gains
 - **AI Agent Development for Non-Coders**: Practical no-code AI development
