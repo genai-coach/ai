@@ -137,7 +137,7 @@ Connect with peer networks and learn from other organizations on similar AI jour
 Ready to transform your business with AI? 
 
 <div class="hero-actions">
-  <a href="mailto:contact@genai-coach.ai" class="btn btn-primary">Schedule Consultation</a>
+  <a href="mailto:vinc@itu.dk" class="btn btn-primary">Schedule Consultation</a>
   <a href="/ai/courses" class="btn btn-secondary">Explore Training</a>
 </div>
 

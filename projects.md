@@ -114,7 +114,7 @@ All projects emphasize:
 
 ### For Organizations
 Ready to implement AI agents in your business?
-- **Consultation**: [Schedule an AI project assessment](mailto:contact@genai-coach.ai)
+- **Consultation**: [Schedule an AI project assessment](mailto:vinc@itu.dk)
 - **Training**: [Explore our bootcamp programs](/ai/courses)
 - **Implementation**: [Request custom development services](/ai/services)
 

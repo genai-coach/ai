@@ -130,7 +130,7 @@ Ongoing support and education rather than one-time engagements for long-term suc
 Ready to transform your skills and organization with AI?
 
 <div class="hero-actions">
-  <a href="mailto:contact@genai-coach.ai" class="btn btn-primary">Book Training Consultation</a>
+  <a href="mailto:vinc@itu.dk" class="btn btn-primary">Book Training Consultation</a>
   <a href="/ai/services" class="btn btn-secondary">Explore Consulting</a>
 </div>
 
