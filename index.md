@@ -9,15 +9,15 @@ description: "Open, people-first AI education platform. Learn responsibly, build
   <div class="container">
     <div class="hero-content">
       <h1>
-        Build the Future with <span style="background: linear-gradient(90deg, #84B8FF, #4ADE80); -webkit-background-clip: text; background-clip: text; color: transparent;">Ethical AI</span>
+        Transform Your Business with <span style="background: linear-gradient(90deg, #84B8FF, #4ADE80); -webkit-background-clip: text; background-clip: text; color: transparent;">Practical AI</span>
       </h1>
       <p class="hero-lead">
-        Foundational, open AI education with a people-first philosophy. 
-        Learn responsibly, build ethically, and shape the future of artificial intelligence.
+        Expert AI consulting and hands-on education with a people-first philosophy. 
+        Navigate AI complexity, build ethical solutions, and achieve measurable business impact.
       </p>
       <div class="hero-actions">
-        <a href="/ai/courses" class="btn btn-primary" aria-label="Start your AI learning journey with our courses">Start Learning</a>
-        <a href="/ai/projects" class="btn btn-secondary" aria-label="Explore hands-on AI projects and examples">Explore Projects</a>
+        <a href="/ai/services" class="btn btn-primary" aria-label="Explore AI consulting and transformation services">Get AI Consulting</a>
+        <a href="/ai/courses" class="btn btn-secondary" aria-label="Start your AI learning journey with our courses">Start Learning</a>
       </div>
     </div>
   </div>
@@ -27,51 +27,97 @@ description: "Open, people-first AI education platform. Learn responsibly, build
 <section class="section" role="main">
   <div class="container">
     <header class="section-header">
-      <h2 class="section-title">Your AI Learning Journey</h2>
+      <h2 class="section-title">AI Solutions That Drive Results</h2>
       <p class="section-subtitle">
-        Comprehensive resources to master AI development with ethical principles at the core
+        From strategic consulting to hands-on implementation, helping businesses achieve measurable AI success
       </p>
     </header>
     
     <div class="card-grid">
       <article class="card">
-        <div class="card-icon" aria-hidden="true">🧪</div>
-        <h3 class="card-title">AI Labs</h3>
+        <div class="card-icon" aria-hidden="true">🎯</div>
+        <h3 class="card-title">AI Strategy & Consulting</h3>
         <p class="card-description">
-          Hands-on experiments and interactive tutorials to explore AI concepts, 
-          from basic neural networks to advanced architectures.
+          Navigate AI complexity with expert guidance. Strategic roadmaps, project management, 
+          and implementation support for sustainable AI transformation.
         </p>
-        <span class="card-status coming-soon" aria-label="AI Labs feature coming soon">Coming Soon</span>
-      </article>
-      
-      <article class="card">
-        <div class="card-icon" aria-hidden="true">⚙️</div>
-        <h3 class="card-title">Model Lifecycle</h3>
-        <p class="card-description">
-          Complete guides for training, evaluating, deploying, and monitoring 
-          AI models with industry best practices.
-        </p>
-        <span class="card-status coming-soon" aria-label="Model Lifecycle guides coming soon">Coming Soon</span>
-      </article>
-      
-      <article class="card">
-        <div class="card-icon" aria-hidden="true">👥</div>
-        <h3 class="card-title">Community</h3>
-        <p class="card-description">
-          Connect with fellow learners, share projects, get help, and contribute 
-          to open-source AI education initiatives.
-        </p>
-        <span class="card-status coming-soon" aria-label="Community features coming soon">Coming Soon</span>
+        <a href="/ai/services" class="card-link">Explore Services</a>
       </article>
       
       <article class="card">
         <div class="card-icon" aria-hidden="true">🛠️</div>
-        <h3 class="card-title">Toolchain Guidance</h3>
+        <h3 class="card-title">No-Code AI Development</h3>
         <p class="card-description">
-          Curated recommendations for frameworks, libraries, and tools to build 
-          robust AI applications efficiently.
+          Build powerful AI agents and automation without coding. Using n8n, Make.com, 
+          Flowise, and modern RAG tools for immediate business impact.
         </p>
-        <span class="card-status coming-soon" aria-label="Toolchain Guidance coming soon">Coming Soon</span>
+        <a href="/ai/projects" class="card-link">See Projects</a>
+      </article>
+      
+      <article class="card">
+        <div class="card-icon" aria-hidden="true">🎓</div>
+        <h3 class="card-title">AI ProductLab Platform</h3>
+        <p class="card-description">
+          Interactive learning with personalized paths, AI assistants, and practical labs. 
+          From prompt engineering to business case generation.
+        </p>
+        <a href="/ai/courses" class="card-link">Start Learning</a>
+      </article>
+      
+      <article class="card">
+        <div class="card-icon" aria-hidden="true">🌐</div>
+        <h3 class="card-title">International Expertise</h3>
+        <p class="card-description">
+          Proven success across Denmark, Netherlands, India, UK, USA, and Italy. 
+          Industry experience from FinTech to Healthcare, Retail to Energy.
+        </p>
+        <a href="/ai/about" class="card-link">Learn More</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- Business Impact Section -->
+<section class="section">
+  <div class="container">
+    <header class="section-header">
+      <h2 class="section-title">Proven Business Impact</h2>
+      <p class="section-subtitle">
+        Our clients achieve measurable results through practical AI implementation
+      </p>
+    </header>
+    
+    <div class="card-grid">
+      <article class="card">
+        <div class="card-icon" aria-hidden="true">📈</div>
+        <h3 class="card-title">+25% Revenue Growth</h3>
+        <p class="card-description">
+          Year-over-year revenue increases through AI-powered optimization and automation
+        </p>
+      </article>
+      
+      <article class="card">
+        <div class="card-icon" aria-hidden="true">💰</div>
+        <h3 class="card-title">-30% Operational Costs</h3>
+        <p class="card-description">
+          Cost reduction within 12 months through intelligent process automation
+        </p>
+      </article>
+      
+      <article class="card">
+        <div class="card-icon" aria-hidden="true">⚡</div>
+        <h3 class="card-title">+200% Productivity</h3>
+        <p class="card-description">
+          Output gains per full-time employee through AI tool integration
+        </p>
+      </article>
+      
+      <article class="card">
+        <div class="card-icon" aria-hidden="true">🎯</div>
+        <h3 class="card-title">90%+ Adoption Rate</h3>
+        <p class="card-description">
+          AI tool adoption across teams within 6 months of implementation
+        </p>
       </article>
     </div>
   </div>
@@ -81,22 +127,28 @@ description: "Open, people-first AI education platform. Learn responsibly, build
 <section class="section">
   <div class="container-narrow">
     <header class="section-header">
-      <h2 class="section-title">Quick Start</h2>
+      <h2 class="section-title">Ready to Get Started?</h2>
       <p class="section-subtitle">
-        Get the development environment up and running in minutes
+        Begin your AI transformation journey today
       </p>
     </header>
     
-    <article class="card">
-      <h3 class="card-title">Local Development Setup</h3>
-      <p class="card-description">
-        Clone the repository and start the Jekyll development server to explore the platform locally.
-      </p>
-      <pre><code>git clone https://github.com/genai-coach/ai.git
-cd ai
-bundle install
-bundle exec jekyll serve
-# Visit: http://127.0.0.1:4000/ai/</code></pre>
-    </article>
+    <div class="card-grid">
+      <article class="card">
+        <h3 class="card-title">🚀 Business Consultation</h3>
+        <p class="card-description">
+          Schedule a strategic consultation to explore AI opportunities for your organization.
+        </p>
+        <a href="mailto:contact@genai-coach.ai" class="btn btn-primary">Book Consultation</a>
+      </article>
+      
+      <article class="card">
+        <h3 class="card-title">🎓 Educational Resources</h3>
+        <p class="card-description">
+          Access courses, workshops, and the AI ProductLab platform for hands-on learning.
+        </p>
+        <a href="/ai/courses" class="btn btn-secondary">Start Learning</a>
+      </article>
+    </div>
   </div>
 </section>
