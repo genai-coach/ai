@@ -23,7 +23,7 @@ Navigate AI complexity and accelerate your digital product development with expe
 
 ## Premium AI Transformation Services
 
-### Executive Programs (€15,000-50,000)
+### Executive Programs
 <article class="service-tier">
   <h4>🎯 AI Leadership for C-Suite</h4>
   <p>Strategic AI transformation programs for executive teams</p>
@@ -46,7 +46,7 @@ Navigate AI complexity and accelerate your digital product development with expe
   </ul>
 </article>
 
-### Implementation Bootcamps (€5,000-15,000)
+### Implementation Bootcamps
 <article class="service-tier">
   <h4>🚀 Sales & Marketing AI Transformation</h4>
   <p>Accelerate revenue growth with AI-powered sales and marketing</p>
@@ -143,4 +143,4 @@ Ready to transform your business with AI?
 
 ---
 
-*Pricing is tailored to project scope and organizational size. Contact us for a custom proposal.*
+*Service offerings are tailored to project scope and organizational size. Contact us for a custom proposal.*
