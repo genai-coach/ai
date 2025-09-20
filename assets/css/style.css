@@ -29,7 +29,7 @@
   
   /* Gradients */
   --gradient-primary: linear-gradient(135deg, var(--blue-700) 0%, var(--green-600) 100%);
-  --gradient-hero: linear-gradient(135deg, var(--blue-900) 0%, var(--blue-700) 30%, var(--green-600) 100%);
+  --gradient-hero: linear-gradient(135deg, #1e3a8a 0%, #1e40af 30%, #1f2937 70%, #111827 100%);
   --gradient-text: linear-gradient(90deg, var(--blue-700), var(--green-400));
   
   /* Shadows & Effects */
@@ -368,18 +368,21 @@ a:hover {
 }
 
 .hero h1 {
-  color: var(--text-hi);
+  color: #ffffff;
   margin-bottom: var(--space-lg);
   font-weight: 700;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .hero-lead {
   font-size: clamp(1.125rem, 3vw, 1.25rem);
-  color: var(--text-muted);
+  color: rgba(255, 255, 255, 0.95);
   margin-bottom: var(--space-2xl);
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
+  font-weight: 400;
+  line-height: 1.6;
 }
 
 .hero-actions {
@@ -414,26 +417,31 @@ a:hover {
 }
 
 .btn-primary {
-  background: var(--gradient-primary);
-  color: var(--text-hi);
+  background: #ffffff;
+  color: #1e3a8a;
+  font-weight: 600;
+  text-shadow: none;
 }
 
 .btn-primary:hover {
   transform: translateY(-1px);
   box-shadow: var(--shadow-lg);
-  color: var(--text-hi);
+  background: #f8fafc;
+  color: #1e3a8a;
 }
 
 .btn-secondary {
   background: rgba(255, 255, 255, 0.1);
-  color: var(--text-hi);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(10px);
+  font-weight: 500;
 }
 
 .btn-secondary:hover {
   background: rgba(255, 255, 255, 0.2);
-  color: var(--text-hi);
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.4);
   transform: translateY(-1px);
 }
 
@@ -441,17 +449,18 @@ a:hover {
    Cards & Grid
    ======================================== */
 .section {
-  padding: 4rem 0;
+  padding: 5rem 0;
 }
 
 .section-header {
   text-align: center;
-  margin-bottom: var(--space-2xl);
+  margin-bottom: 4rem;
 }
 
 .section-title {
   color: var(--text-hi);
   margin-bottom: var(--space-md);
+  font-weight: 700;
 }
 
 .section-subtitle {
@@ -459,6 +468,7 @@ a:hover {
   font-size: 1.125rem;
   max-width: 600px;
   margin: 0 auto;
+  line-height: 1.6;
 }
 
 .card-grid {
@@ -471,11 +481,12 @@ a:hover {
 .card {
   background: var(--bg-surface);
   border: 1px solid var(--border);
-  border-radius: var(--radius-lg);
+  border-radius: 12px;
   padding: var(--space-xl);
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
 }
 
 .card::before {
@@ -489,7 +500,7 @@ a:hover {
 }
 
 .card:hover {
-  transform: translateY(-4px);
+  transform: translateY(-2px);
   box-shadow: var(--shadow-glow);
   border-color: var(--blue-700);
 }
@@ -510,30 +521,34 @@ a:hover {
   color: var(--text-hi);
   font-size: 1.25rem;
   margin-bottom: var(--space-md);
+  font-weight: 600;
 }
 
 .card-description {
   color: var(--text-muted);
   margin-bottom: var(--space-lg);
+  line-height: 1.6;
 }
 
 .card-status {
   display: inline-flex;
   align-items: center;
   gap: var(--space-xs);
-  padding: var(--space-xs) var(--space-sm);
+  padding: 6px 12px;
   background: rgba(52, 211, 153, 0.1);
   color: var(--green-400);
-  border-radius: var(--radius-md);
-  font-size: 0.875rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.5px;
+  border: 1px solid rgba(52, 211, 153, 0.2);
 }
 
 .card-status.coming-soon {
   background: rgba(17, 133, 228, 0.1);
   color: var(--blue-300);
+  border-color: rgba(17, 133, 228, 0.2);
 }
 
 /* ========================================
@@ -544,6 +559,7 @@ a:hover {
   border-top: 1px solid var(--border);
   padding: var(--space-2xl) 0;
   margin-top: 4rem;
+  color: var(--text-body);
 }
 
 .footer-content {
@@ -559,6 +575,7 @@ a:hover {
   color: var(--text-hi);
   font-size: 1.125rem;
   margin-bottom: var(--space-lg);
+  font-weight: 600;
 }
 
 .footer-links {
@@ -574,6 +591,7 @@ a:hover {
 .footer-links a {
   color: var(--text-muted);
   transition: color 0.2s ease;
+  text-decoration: none;
 }
 
 .footer-links a:hover {
