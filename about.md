@@ -2,6 +2,8 @@
 layout: page
 title: About
 permalink: /about/
+description: "Professional AI consultant and educator specializing in people-first artificial intelligence. Expert guidance for responsible AI implementation and ethical technology development."
+keywords: "AI consultant, AI educator, artificial intelligence expert, responsible AI, AI ethics, technology consultant"
 ---
 
 # About GenAI Coach

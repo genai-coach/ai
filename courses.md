@@ -2,6 +2,8 @@
 layout: page
 title: Courses
 permalink: /courses/
+description: "Professional AI education and training with a people-first philosophy. Executive workshops, hands-on bootcamps, and practical AI learning for responsible technology development."
+keywords: "AI education, AI training, AI courses, machine learning education, AI workshops, AI bootcamp, responsible AI training"
 ---
 
 # AI Education & Training
