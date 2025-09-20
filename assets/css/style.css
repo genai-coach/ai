@@ -77,8 +77,8 @@ body {
   margin: 0;
   font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
   line-height: 1.6;
-  color: #1e293b;
-  background: #ffffff;
+  color: var(--text-body);
+  background: var(--bg-deep);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -462,13 +462,13 @@ a:hover {
 }
 
 .section-title {
-  color: #1e3a8a;
+  color: var(--text-hi);
   margin-bottom: var(--space-md);
   font-weight: 700;
 }
 
 .section-subtitle {
-  color: #64748b;
+  color: var(--text-muted);
   font-size: 1.125rem;
   max-width: 600px;
   margin: 0 auto;
@@ -483,8 +483,8 @@ a:hover {
 }
 
 .card {
-  background: #ffffff;
-  border: 1px solid #e2e8f0;
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
   border-radius: 12px;
   padding: var(--space-xl);
   transition: all 0.3s ease;
@@ -500,19 +500,19 @@ a:hover {
   left: 0;
   right: 0;
   height: 4px;
-  background: linear-gradient(90deg, #1e3a8a, #3730a3);
+  background: var(--gradient-primary);
 }
 
 .card:hover {
   transform: translateY(-2px);
-  box-shadow: 0 10px 25px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-  border-color: #cbd5e1;
+  box-shadow: var(--shadow-glow);
+  border-color: var(--blue-700);
 }
 
 .card-icon {
   width: 48px;
   height: 48px;
-  background: linear-gradient(135deg, #1e3a8a, #3730a3);
+  background: var(--gradient-primary);
   border-radius: var(--radius-md);
   display: flex;
   align-items: center;
@@ -522,14 +522,14 @@ a:hover {
 }
 
 .card-title {
-  color: #1e293b;
+  color: var(--text-hi);
   font-size: 1.25rem;
   margin-bottom: var(--space-md);
   font-weight: 600;
 }
 
 .card-description {
-  color: #64748b;
+  color: var(--text-muted);
   margin-bottom: var(--space-lg);
   line-height: 1.6;
 }
@@ -539,31 +539,31 @@ a:hover {
   align-items: center;
   gap: var(--space-xs);
   padding: 6px 12px;
-  background: #f1f5f9;
-  color: #475569;
+  background: rgba(52, 211, 153, 0.1);
+  color: var(--green-400);
   border-radius: 20px;
   font-size: 0.75rem;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  border: 1px solid #e2e8f0;
+  border: 1px solid rgba(52, 211, 153, 0.2);
 }
 
 .card-status.coming-soon {
-  background: #eff6ff;
-  color: #1e40af;
-  border-color: #dbeafe;
+  background: rgba(17, 133, 228, 0.1);
+  color: var(--blue-300);
+  border-color: rgba(17, 133, 228, 0.2);
 }
 
 /* ========================================
    Footer
    ======================================== */
 .site-footer {
-  background: #1e293b;
-  border-top: 1px solid #334155;
+  background: var(--bg-panel);
+  border-top: 1px solid var(--border);
   padding: var(--space-2xl) 0;
   margin-top: 4rem;
-  color: #cbd5e1;
+  color: var(--text-body);
 }
 
 .footer-content {
@@ -576,7 +576,7 @@ a:hover {
 }
 
 .footer-section h4 {
-  color: #ffffff;
+  color: var(--text-hi);
   font-size: 1.125rem;
   margin-bottom: var(--space-lg);
   font-weight: 600;
@@ -593,13 +593,13 @@ a:hover {
 }
 
 .footer-links a {
-  color: #94a3b8;
+  color: var(--text-muted);
   transition: color 0.2s ease;
   text-decoration: none;
 }
 
 .footer-links a:hover {
-  color: #ffffff;
+  color: var(--text-hi);
 }
 
 .footer-bottom {
