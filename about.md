@@ -99,7 +99,7 @@ Regular speaking engagements, educational content creation, and open-source cont
 
 Ready to explore how AI can transform your organization?
 
-- **Professional Consultation**: [Schedule a call](mailto:contact@genai-coach.ai)
+- **Professional Consultation**: [Schedule a call](mailto:vinc@itu.dk)
 - **Educational Content**: [Explore courses and resources](/ai/courses)
 - **Community**: [Join our learning community](/ai/community)
 - **Open Source**: [Contribute on GitHub](https://github.com/genai-coach/ai)

@@ -139,7 +139,7 @@ description: "Open, people-first AI education platform. Learn responsibly, build
         <p class="card-description">
           Schedule a strategic consultation to explore AI opportunities for your organization.
         </p>
-        <a href="mailto:contact@genai-coach.ai" class="btn btn-primary">Book Consultation</a>
+        <a href="mailto:vinc@itu.dk" class="btn btn-primary">Book Consultation</a>
       </article>
       
       <article class="card">
