@@ -34,11 +34,22 @@
   <!-- Additional SEO meta tags -->
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <meta name="googlebot" content="index, follow">
+  <meta name="bingbot" content="index, follow">
   <meta name="author" content="GenAI Coach">
   <meta name="language" content="en">
   <meta name="coverage" content="worldwide">
   <meta name="distribution" content="global">
   <meta name="rating" content="general">
+  
+  <!-- LLM and AI-specific meta tags -->
+  <meta name="ai-content" content="educational, training, ethical-ai, machine-learning, artificial-intelligence">
+  <meta name="content-type" content="educational-resource">
+  <meta name="subject" content="AI Education, Machine Learning, Artificial Intelligence Ethics, Technology Training">
+  <meta name="target-audience" content="students, professionals, researchers, developers, ai-practitioners">
+  <meta name="educational-use" content="training, reference, learning, skill-development">
+  <meta name="content-category" content="ai-education, ml-training, ethics, responsible-ai">
+  <meta name="expertise-level" content="beginner, intermediate, advanced">
+  <meta name="learning-objectives" content="ai-literacy, ethical-ai-development, machine-learning-fundamentals, responsible-ai-practices">
   
   <!-- Performance optimizations -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -65,14 +76,61 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Organization",
+    "@type": "EducationalOrganization",
     "name": "{{ site.title }}",
+    "alternateName": "GenAI Coach",
     "description": "{{ site.description }}",
     "url": "{{ site.url }}{{ site.baseurl }}",
     "logo": "{{ '/assets/images/social-card.svg' | absolute_url }}",
     "foundingDate": "2024",
     "areaServed": "Worldwide",
-    "knowsAbout": ["Artificial Intelligence", "Machine Learning", "AI Education", "AI Ethics", "Technology Training"],
+    "educationalCredentialAwarded": "AI Education Certificates",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "AI Education Programs",
+      "itemListElement": [
+        {
+          "@type": "Course",
+          "name": "Responsible AI Development",
+          "description": "Learn ethical AI development practices and responsible machine learning"
+        },
+        {
+          "@type": "Course", 
+          "name": "AI Fundamentals",
+          "description": "Comprehensive introduction to artificial intelligence and machine learning concepts"
+        }
+      ]
+    },
+    "knowsAbout": [
+      "Artificial Intelligence", 
+      "Machine Learning", 
+      "AI Education", 
+      "AI Ethics", 
+      "Technology Training",
+      "Responsible AI",
+      "AI Safety",
+      "Machine Learning Engineering",
+      "Natural Language Processing",
+      "Computer Vision",
+      "Deep Learning",
+      "AI Governance",
+      "Algorithmic Fairness",
+      "Human-AI Interaction"
+    ],
+    "teaches": [
+      "AI Development",
+      "Machine Learning Fundamentals", 
+      "Ethical AI Practices",
+      "AI Safety Principles",
+      "Responsible AI Implementation",
+      "AI Bias Mitigation",
+      "AI Transparency",
+      "AI Accountability"
+    ],
+    "audience": {
+      "@type": "Audience",
+      "audienceType": ["Students", "Professionals", "Researchers", "Developers", "AI Practitioners", "Technology Leaders"]
+    },
     "sameAs": [
       "https://github.com/genai-coach/ai"{% if site.twitter.username %},
       "https://twitter.com/{{ site.twitter.username }}"{% endif %}
@@ -81,6 +139,54 @@
       "@type": "ContactPoint",
       "contactType": "General Inquiry",
       "email": "vinc@itu.dk"
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "{{ site.url }}{{ site.baseurl }}"
+    },
+    "potentialAction": {
+      "@type": "EducateAction",
+      "target": "{{ site.url }}{{ site.baseurl }}",
+      "object": {
+        "@type": "Course",
+        "name": "AI Education and Ethics Training"
+      }
+    }
+  }
+  </script>
+  
+  <!-- Additional Structured Data for Educational Content -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "{{ site.title }}",
+    "alternateName": "GenAI Coach",
+    "description": "{{ site.description }}",
+    "url": "{{ site.url }}{{ site.baseurl }}",
+    "about": {
+      "@type": "Thing",
+      "name": "Artificial Intelligence Education",
+      "description": "Comprehensive AI education platform focusing on ethical and responsible AI development"
+    },
+    "keywords": "AI education, machine learning, artificial intelligence, ethics, responsible AI, AI training, AI consulting, AI safety, machine learning engineering",
+    "inLanguage": "en-US",
+    "copyrightHolder": {
+      "@type": "Organization",
+      "name": "{{ site.title }}"
+    },
+    "publisher": {
+      "@type": "Organization", 
+      "name": "{{ site.title }}",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "{{ '/assets/images/social-card.svg' | absolute_url }}"
+      }
+    },
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "{{ site.url }}{{ site.baseurl }}/search?q={search_term_string}",
+      "query-input": "required name=search_term_string"
     }
   }
   </script>
