@@ -35,7 +35,7 @@ social:
     
 # Website metadata
 tagline: "Open, People-First AI Education"
-keywords: "AI education, machine learning, artificial intelligence, ethics, responsible AI, AI training, AI consulting"
+keywords: "AI education, machine learning, artificial intelligence, ethics, responsible AI, AI training, AI consulting, AI safety, machine learning engineering, deep learning, natural language processing, computer vision, AI governance, algorithmic fairness, human-AI interaction"
 
 # SEO defaults for pages
 defaults:
@@ -45,6 +45,13 @@ defaults:
     values:
       layout: "default"
       image: /assets/images/social-card.svg
+      author: GenAI Coach
+      
+# LLM and AI-specific metadata
+ai_content_type: "educational"
+content_focus: "responsible-ai-education"
+target_audience: ["students", "professionals", "researchers", "developers", "ai-practitioners"]
+educational_objectives: ["ai-literacy", "ethical-ai-development", "responsible-ai-practices", "ai-safety-awareness"]
       
 # Site verification (uncomment when verification codes are available)
 # google_site_verification: "your-google-verification-code"

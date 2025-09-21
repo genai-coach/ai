@@ -17,6 +17,43 @@ Allow: /
 User-agent: DuckDuckBot
 Allow: /
 
+# Allow major LLM training and indexing bots
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
 # Block common bad bots and scrapers
 User-agent: AhrefsBot
 Disallow: /
@@ -27,7 +64,13 @@ Disallow: /
 User-agent: DotBot
 Disallow: /
 
-# Crawl delay for politeness
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MajesticSEO
+Disallow: /
+
+# Crawl delay for politeness (reduced for LLMs)
 Crawl-delay: 1
 
 # Sitemap location
