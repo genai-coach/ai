@@ -9,7 +9,7 @@ description: "Open, people-first AI education platform. Learn responsibly, build
   <div class="container">
     <div class="hero-content">
       <h1>
-        Transform Your Business with <span style="background: linear-gradient(90deg, #84B8FF, #4ADE80); -webkit-background-clip: text; background-clip: text; color: transparent;">Practical AI</span>
+        Transform Your Business with <span style="background: linear-gradient(90deg, #84B8FF, #4ADE80); -webkit-background-clip: text; background-clip: text; color: transparent;">Human-centered AI</span>
       </h1>
       <p class="hero-lead">
         Expert AI consulting and hands-on education with a people-first philosophy. 
