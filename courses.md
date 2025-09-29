@@ -35,6 +35,31 @@ Successfully delivered to **9 participants** across **3 specialized groups**:
 - Ethical AI development practices
 - Project management for AI initiatives
 
+## ITU Professional Course: Lær at bruge AI-agenter
+*IT University of Copenhagen - Professional Development*
+
+### Learn to Use AI Agents
+
+Building on our successful AI agent course offerings, this professional development program from IT University focuses on practical AI agent implementation for modern businesses.
+
+#### Course Overview
+- **Institution**: IT University of Copenhagen (ITU)
+- **Focus**: Practical AI agent usage and implementation
+- **Target Audience**: Professionals, developers, and business leaders
+- **Approach**: Hands-on learning with real-world applications
+
+#### Key Learning Areas
+- **AI Agent Fundamentals**: Understanding how AI agents work and their capabilities
+- **Practical Implementation**: Direct experience building and deploying AI agents
+- **Business Integration**: Connecting AI agents to existing workflows and systems
+- **Best Practices**: Industry standards for AI agent development and deployment
+- **Ethical Considerations**: Responsible AI agent usage and governance
+
+#### Why This Course?
+This ITU professional course complements our existing AI education portfolio by providing university-level expertise in AI agent technologies. Perfect for professionals seeking credible, academic-backed training in this rapidly evolving field.
+
+**Learn More**: [ITU Professional Courses](https://www.itu.dk/Efteruddannelser/ITU-Professional-Courses/Kurser/Laer-at-bruge-AI-agenter)
+
 ## AI ProductLab Platform
 *Interactive Learning Environment - In Development*
 
