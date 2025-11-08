@@ -11,7 +11,7 @@ keywords: "AI education, AI training, AI courses, machine learning education, AI
 Professional AI education designed with a people-first philosophy. From executive workshops to hands-on bootcamps, learn responsibly and build ethically.
 
 ## Featured Course: Digital Produktudvikling med AI-agenter
-*IT University - September 11-12, 2024*
+*IT University*
 
 ### Comprehensive 2-Day Intensive
 
