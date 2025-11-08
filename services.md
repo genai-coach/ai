@@ -86,6 +86,7 @@ Navigate AI complexity and accelerate your digital product development with expe
 - **1:1 Executive Coaching**: Personalized AI leadership development
 - **Implementation Teams**: Dedicated teams for complex AI projects
 - **Peer Executive Networks**: Connect with other AI-forward leaders
+- **[Agentic Live](/ai/agentic-live/)**: Bi-weekly sessions, webinars, and 1:1 coaching for agentic developers
 
 ## Industry Experience
 

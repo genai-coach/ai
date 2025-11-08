@@ -71,6 +71,7 @@ sitemap:
 header_pages:
   - courses.md
   - projects.md
+  - agentic-live.md
   - community.md
   - docs/index.md
 

@@ -149,6 +149,14 @@ description: "Open, people-first AI education platform. Learn responsibly, build
         </p>
         <a href="/ai/courses" class="btn btn-secondary">Start Learning</a>
       </article>
+      
+      <article class="card">
+        <h3 class="card-title">🎯 Agentic Live</h3>
+        <p class="card-description">
+          Join bi-weekly sessions, webinars, and 1:1 coaching for agentic AI development. Available in Danish, English, and Italian.
+        </p>
+        <a href="/ai/agentic-live" class="btn btn-secondary">Join Sessions</a>
+      </article>
     </div>
   </div>
 </section>

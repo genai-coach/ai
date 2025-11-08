@@ -58,6 +58,7 @@ Regular opportunities to learn and contribute:
 
 ### Events & Workshops
 Virtual and in-person learning opportunities:
+- **[Agentic Live Sessions](/ai/agentic-live/)**: Bi-weekly 30-minute sessions every second Friday
 - **Monthly AI Implementation Meetups**: Regular community gatherings
 - **Quarterly Executive Summits**: Strategic AI leadership events
 - **Annual Conference**: Comprehensive AI transformation symposium
